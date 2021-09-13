@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <title>Motion Prediction using Artificial Intelligence</title>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 ​
@@ -13,6 +18,7 @@ body, html {
   height: 100%;
   line-height: 1.8;
 }
+
 .backgroundImg {
   background-image: url(./Images/radar-background.jpeg);
   background-size: 100;
@@ -20,25 +26,29 @@ body, html {
   height: 1;
 }
 ​
-/* Full height image header */
+/* Full height image header
 .bgimg-1 {
   background-position: center;
   background-size: cover;
   background-image: url("radar-background.jpeg");
   min-height: 100%;
 }
-​
-.w3-bar .w3-button {
+​*/
+.w3-bar  {
   padding: 16px;
 }
+.w3-button{
+  margin: 0;
+  text-align: left;
+}
+
 </style>
-<body>
 ​
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
     <a href= "website.html" >
-    <img class="w3-image w3-round-large"  src="./Images/CSU-logo.png" alt="home" width="125" height="125">
+    <img class="w3-image" src="./Images/CSU-logo.png" alt="home" width="125">
     </a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
@@ -58,7 +68,7 @@ body, html {
 </div>
 ​
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:grid" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
   <a href="#timeline" onclick="w3_close()" class="w3-bar-item w3-button">TIMELINE</a>
@@ -66,7 +76,7 @@ body, html {
   <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
 </nav>
 ​
-<!-- Header with full-height image -->
+<!-- Header with full-height image 
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
   </div> 
@@ -79,14 +89,17 @@ body, html {
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
 </header>
-​
-<!-- About Section -->
-<div class = "backgroundImg">
-<div class="w3-container"  style="color:white; padding:128px 16px" id="home">
-  <h3 class="w3-center"> Motion Prediction using Artificial Intelligence</h3>
-  <p class="w3-center w3-large">About the project</p>
-</div>
-</div>
+​-->
+
+<!--body-->
+<body>
+    <!-- About Section -->
+  <div class = "backgroundImg">
+    <div class="w3-container"  style="color:white; padding:128px 16px" id="home">
+      <h3 class="w3-center"> Motion Prediction using Artificial Intelligence</h3>
+      <p class="w3-center w3-large">About the project</p>
+    </div>
+  </div>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter">
       <img src="./Images/abstract.png" alt="Will" style="width: 25%">
@@ -109,113 +122,72 @@ body, html {
       <p>insert text here </p>
     </div>
   </div>
-
-
 ​
-<!-- Promo Section - "We know design" -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px", id="timeline">
-  <div class="w3-row-padding">
-    <div class="w3-col m6">
-      <h3>Project Timeline</h3>
-      <p>Check out our weekly-updated timeline for this project!</p>
-      <p><a href="https://docs.google.com/spreadsheets/d/1ehb6ZMU5ry1K7B8EPTTxSlZKhAaGUhyc53hluJD2OG8/edit?usp=sharing" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Plan</a></p>
-    </div>
-    <div class="w3-col m6" >
-      <iframe width=650  height="300" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRW0qiy61m5Os99smnUU-gsA4juMkcNjKQViHoNGejApes__qu_nnn5BBW7PhOqIbxQRcFrf3vmIIKr/pubhtml?widget=true&amp;headers=false"></iframe>
+<!-- Project Timeline -->
+  <div class="w3-container w3-light-grey" style="padding:64px 16px", id="timeline">
+    <div class="w3-row-padding">
+      <div class="w3-col m6">
+        <h3>Project Timeline</h3>
+        <p>Check out our weekly-updated timeline for this project!</p>
+        <p><a href="https://docs.google.com/spreadsheets/d/1ehb6ZMU5ry1K7B8EPTTxSlZKhAaGUhyc53hluJD2OG8/edit?usp=sharing" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Plan</a></p>
+      </div>
+      <div class="w3-col m6" >
+        <iframe width=650  height="300" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRW0qiy61m5Os99smnUU-gsA4juMkcNjKQViHoNGejApes__qu_nnn5BBW7PhOqIbxQRcFrf3vmIIKr/pubhtml?widget=true&amp;headers=false"></iframe>
+      </div>
     </div>
   </div>
-</div>
 ​
 <!-- Team Section -->
-<div class="w3-container" style="padding:128px 16px" id="team">
-  <h3 class="w3-center">THE TEAM</h3>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div style="float:center" class="w3-card w3-center">
-        <img src="./Images/will.JPG" alt="Will" style="width:100%">
-        <div class="w3-container">
-          <h3>Will Reiter</h3>
-          <p class="w3-opacity">Computer Engineering</p>
-          <p>additional information here</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+  <div class="w3-container" style="padding:64px 16px" id="team">
+    <h3 class="w3-center">THE TEAM</h3>
+    <div class="w3-row-padding" style="margin-top:64px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div style="float:center" class="w3-card w3-center">
+          <img src="./Images/will.JPG" alt="Will" style="width:100%">
+          <div class="w3-container">
+            <h3>Will Reiter</h3>
+            <p class="w3-opacity">Computer Engineering</p>
+            <p>additional information here</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div style="float:center" class="w3-card w3-center">
-        <img src="/w3images/team1.jpg" alt="Drew" style="width:100%">
-        <div class="w3-container">
-          <h3>Drew Shively </h3>
-          <p class="w3-opacity">Electrical Engineering</p>
-          <p>additional information here</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div style="float:center" class="w3-card w3-center">
+          <img src="/w3images/team1.jpg" alt="Drew" style="width:100%">
+          <div class="w3-container">
+            <h3>Drew Shively </h3>
+            <p class="w3-opacity">Electrical Engineering</p>
+            <p>additional information here</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+​</body>
 ​
-​<!--
-  
-
-
-<div class="w3-container w3-light-grey" style="padding:128px 8px" id="support">
-  <h3 class="w3-center">SUPPORT</h3>
-  <p class="w3-center w3-large">Explore CSU and other projects</p>
-  <div class="w3-col-padding" style="margin-top:64px">
-    <div style="float:left" class="w3-col l3 m6">
-      <form action="https://advancing.colostate.edu/ENG/ECE_SRDESIGN/GIVE">
-        <input type="submit" value="Support Our Program"/>
-      </form>
+<!--Footer-->
+<footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3><u>About our project</u></h3>
+      <p>Add some project information here.</p>
     </div>
-    <div style="float:center" class="w3-col l3 m6">
-      <form action="http://www.engr.colostate.edu/ECE401/AY21_senior_design_projects.php">
-        <input type="submit" value="Senior Design Projects"/>
-      </form>
+    <div class="w3-third">
+      <h3><u>Useful Links</u></h3>
+        <h6 ><a href="https://advancing.colostate.edu/ENG/ECE_SRDESIGN/GIVE" style=padding:0; class="w3-button">Support our Program</a></h6>
+        <h6><a href="http://www.engr.colostate.edu/ECE401/AY21_senior_design_projects.php" style=padding:0; class=" w3-button">Senior Design Projects</a></h6> 
+        <h6><a href="http://www.engr.colostate.edu/ece/index.php" style=padding:0; class="w3-button">ECE Department</a></h6> 
+        <h6><a href="http://www.colostate.edu/" style=padding:0; class="w3-button">CSU Website</a></h6> 
     </div>
-    <div style="float:center" class="w3-col l3 m6">
-      <form action="http://www.engr.colostate.edu/ece/index.php">
-        <input type="submit" value=" ECE Department"/>
-      </form>
+    <div class="w3-third">
+      <h3><u>Social</u></h3>
+        <h6> 
+          <a href="https://www.facebook.com/csuengineering/"  style=padding:0;margin-right:10px;  class="fa fa-facebook-official w3-hover-opacity w3-button"></a>
+          <a href="https://twitter.com/CSUEngineering?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" style=padding:0;margin-right:10px; class="fa fa-twitter w3-hover-opacity w3-button"></a>
+          <a href="https://www.instagram.com/csuengineering/?hl=en" style=padding:0; style=border:1; class="fa fa-instagram w3-hover-opacity w3-button"></a>
+        </h6>
     </div>
-    <div style="float:right" class="w3-col l3 m6"> 
-      <form action="http://www.colostate.edu/">
-        <input type="submit" value="CSU Website"/>
-      </form>
-    </div>
-  -->
-    <footer class="w3-container w3-padding-32 w3-dark-grey">
-      <div class="w3-row-padding">
-        <div class="w3-third">
-          <h3><u>About our project</u></h3>
-          <p>Add some project information here.</p>
-        </div>
-        <div class="w3-third">
-          <h3><u>Useful Links</u></h3>
-            <h6>
-              <a href="https://advancing.colostate.edu/ENG/ECE_SRDESIGN/GIVE" target="blank" class="w3-bar-item w3-button" style="text-align:left">Support our Program</a>
-            </h6>
-            <h6>
-              <a href="http://www.engr.colostate.edu/ECE401/AY21_senior_design_projects.php" class="w3-bar-item w3-button">Senior Design Projects</a>
-            </h6> 
-            <h6 >
-              <a href="http://www.engr.colostate.edu/ece/index.php" class="w3-bar-item w3-button">ECE Department</a>
-            </h6> 
-            <h6 >
-              <a href="http://www.colostate.edu/" class="w3-bar-item w3-button">CSU Website</a>
-            </h6> 
-        </div>
-    
-        <div class="w3-third">
-          <h3><u>Social</u></h3>
-          <h6>
-            
-            <a href="https://www.facebook.com/csuengineering/"  class="fa fa-facebook-official w3-hover-opacity w3-button"></a>
-            <a href="https://twitter.com/CSUEngineering?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"  class="fa fa-twitter w3-hover-opacity w3-button"></a>
-            <a href="https://www.instagram.com/csuengineering/?hl=en" class="fa fa-instagram w3-hover-opacity w3-button"></a>
-
-          </h6>
-        </div>
-    
-      </div>
-      </footer>
+  </div>
+</footer>
