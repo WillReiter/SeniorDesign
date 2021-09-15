@@ -46,8 +46,8 @@ body, html {
 ​
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href= "website.html" >
+  <div class=" w3-white w3-card" id="myNavbar">
+    <a href="./index.html">
     <img class="w3-image" src="./Images/CSU-logo.png" alt="home" width="125">
     </a>
     <!-- Right-sided navbar links -->
@@ -71,9 +71,9 @@ body, html {
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:grid" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
-  <a href="#timeline" onclick="w3_close()" class="w3-bar-item w3-button">TIMELINE</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
+  <a href="./timeline.html" onclick="w3_close()" class="w3-bar-item w3-button">TIMELINE</a>
+  <a href="./team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="./media.html" onclick="w3_close()" class="w3-bar-item w3-button">MEDIA</a>
 </nav>
 ​
 <!-- Header with full-height image 
@@ -104,35 +104,36 @@ body, html {
     <div class="w3-quarter">
       <img src="./Images/abstract.png" alt="Will" style="width: 25%">
       <p class="w3-large">Abstract</p>
-      <p>Artificial Intelligence and Machine Learning have allowed for a new generation of weather prediction. Traditional methods such as optical flow prove to be fairly reliable, but fall short when determining model parameters. To solve this problem, we are using machine learning to create a spatiotemporal sequence where the input to the system is a collection of prior radar maps and the output is a sequence of future radar maps.</p>
+      <p align="justify">Artificial Intelligence and Machine Learning have allowed for a new generation of problems to be solved. One of the more interesting applications is in nowcasting precipitation, essentially short-term prediction of rainfall. We explore and attempt to improve upon the current state of nowcasting using a transfer learning model to provide real time predictions.</p>
     </div>
     <div class="w3-quarter">
       <img src="./Images/background.png" alt="Will" style="width: 25%">
       <p class="w3-large">Project Background</p>
-      <p>insert text here</p>
+      <p align="justify">Prior papers have been written on the topic and propose the use of a convolutional long short-term memory (ConvLSTM) model and deep convolutional neural network (CNN). These models fall short due to the large amounts or radar data required for proper function. Dr. Haonan Chen, our supervising faculty member, has done extensive research into the topic of nowcasting precipitation and has proven that it is possible to use one location model for another location with a limited amount of frames from the new location to be predicted.</p>
     </div>
     <div class="w3-quarter">
       <img src="./Images/chain.png" alt="Will" style="width: 25%">
       <p class="w3-large">Constraints</p>
-      <p>insert text here</p>
+      <p align="justify">In the world of Machine Learning, data is your biggest asset. Most people believe the quantity to be the limiting factor, but our approach to weather prediction attempts to disprove that. In our case, hardware and time of simulation will be the main constraints of this project. Intense simulations of complex data require certain hardware to complete in a timely manner. Without very powerful hardware, making changes to the algorithm and training it takes more time.</p>
     </div>
     <div class="w3-quarter">
       <img src="./Images/award.png" alt="Will" style="width: 25%">
       <p class="w3-large">Goals</p>
-      <p>insert text here </p>
+      <p align="justify">Improve upon the commonly used based convolution neural-network (CNN) model, by moving to a CNN-MMD or CNN-FT to provide a flexible and adaptable nowcasting model. Almost all deep-learning based models rely on large sets of localized data to provide accurate predictions of precipitation. Our goal is to remove that dependency and use a transfer learning model to provide real time predictions.
+      </p>
     </div>
   </div>
 ​
 <!-- Project Timeline -->
   <div class="w3-container w3-light-grey" style="padding:64px 16px", id="timeline">
     <div class="w3-row-padding">
-      <div class="w3-col m6">
+      <div class="w3-col m4">
         <h3>Project Timeline</h3>
         <p>Check out our weekly-updated timeline for this project!</p>
         <p><a href="https://docs.google.com/spreadsheets/d/1ehb6ZMU5ry1K7B8EPTTxSlZKhAaGUhyc53hluJD2OG8/edit?usp=sharing" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Plan</a></p>
       </div>
-      <div class="w3-col m6" >
-        <iframe width=650  height="300" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRW0qiy61m5Os99smnUU-gsA4juMkcNjKQViHoNGejApes__qu_nnn5BBW7PhOqIbxQRcFrf3vmIIKr/pubhtml?widget=true&amp;headers=false"></iframe>
+      <div class="w3-col m5" >
+        <iframe width=900;  height=300; src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRW0qiy61m5Os99smnUU-gsA4juMkcNjKQViHoNGejApes__qu_nnn5BBW7PhOqIbxQRcFrf3vmIIKr/pubhtml?widget=true&amp;headers=false"></iframe>
       </div>
     </div>
   </div>
@@ -140,6 +141,7 @@ body, html {
 <!-- Team Section -->
   <div class="w3-container" style="padding:64px 16px" id="team">
     <h3 class="w3-center">THE TEAM</h3>
+    <a href="./team.html" class=" w3-button w3-block" style="text-align:center;margin-left:0">Meet the Team</a>
     <div class="w3-row-padding" style="margin-top:64px">
       <div class="w3-col l3 m6 w3-margin-bottom">
         <div style="float:center" class="w3-card w3-center">
@@ -147,8 +149,7 @@ body, html {
           <div class="w3-container">
             <h3>Will Reiter</h3>
             <p class="w3-opacity">Computer Engineering</p>
-            <p>additional information here</p>
-            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+            <p>wreiter@rams.colostate.edu</p>
           </div>
         </div>
       </div>
@@ -158,8 +159,25 @@ body, html {
           <div class="w3-container">
             <h3>Drew Shively </h3>
             <p class="w3-opacity">Electrical Engineering</p>
-            <p>additional information here</p>
-            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+            <p>dshive@rams.colostate.edu</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div style="float:center" class="w3-card w3-center">
+          <div class="w3-container">
+            <h3>Haonan Chen</h3>
+            <p class="w3-opacity">Faculty Advisor</p>
+            <p>haonan.chen@colostate.edu</p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div style="float:center" class="w3-card w3-center">
+          <div class="w3-container">
+            <h3>Shun Yao</h3>
+            <p class="w3-opacity">Graduate Student</p>
+            <p>s.yao@colostate.edu</p>
           </div>
         </div>
       </div>
@@ -171,17 +189,17 @@ body, html {
 <footer class="w3-container w3-padding-32 w3-dark-grey">
   <div class="w3-row-padding">
     <div class="w3-third">
-      <h3><u>About our project</u></h3>
-      <p>Add some project information here.</p>
+      <h3 class="w3-center"><u>About our project</u></h3>
+      <p align="justify"> Motion Prediction using Artificial Intelligence has come quite a long way. Fifteen years ago, image recognition was one of the challenging AI/Machine Learning problems. In 2021, we have the computational power & technological requirements necessary to analize complex data sets. At its core, this project is the mission to fully utilize the state-of-the-art tools we have at our hands.</p>
     </div>
-    <div class="w3-third">
+    <div class="w3-third w3-center">
       <h3><u>Useful Links</u></h3>
         <h6 ><a href="https://advancing.colostate.edu/ENG/ECE_SRDESIGN/GIVE" style=padding:0; class="w3-button">Support our Program</a></h6>
         <h6><a href="http://www.engr.colostate.edu/ECE401/AY21_senior_design_projects.php" style=padding:0; class=" w3-button">Senior Design Projects</a></h6> 
         <h6><a href="http://www.engr.colostate.edu/ece/index.php" style=padding:0; class="w3-button">ECE Department</a></h6> 
         <h6><a href="http://www.colostate.edu/" style=padding:0; class="w3-button">CSU Website</a></h6> 
     </div>
-    <div class="w3-third">
+    <div class="w3-third w3-center">
       <h3><u>Social</u></h3>
         <h6> 
           <a href="https://www.facebook.com/csuengineering/"  style=padding:0;margin-right:10px;  class="fa fa-facebook-official w3-hover-opacity w3-button"></a>

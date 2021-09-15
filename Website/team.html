@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<title>Motion Prediction using Artificial Intelligence - Team</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+​
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+.w3-bar {
+  padding: 16px;
+}
+.w3-button{
+  margin: 0;
+
+}
+​
+</style>
+<body>
+​
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class=" w3-white w3-card" id="myNavbar">
+    <a href= "./index.html" >
+    <img class="w3-image" src="./Images/CSU-logo.png" alt="home" width="125">
+    </a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="./index.html" class="w3-bar-item w3-button">HOME</a>
+      <a href="./timeline.html" class="w3-bar-item w3-button">TIMELINE</a>
+      <a href="./team.html" class="w3-bar-item w3-button">TEAM</a>
+      <a href="./documents.html" class="w3-bar-item w3-button">DOCUMENTS</a>
+      <a href="./media.html" class="w3-bar-item w3-button">MEDIA</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+​
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+​
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:grid" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+  <a href="./timeline.html" onclick="w3_close()" class="w3-bar-item w3-button">TIMELINE</a>
+  <a href="./team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="./documents.html" onclick="w3_close()" class="w3-bar-item w3-button">DOCUMENTS</a>
+  <a href="./media.html" onclick="w3_close()" class="w3-bar-item w3-button">MEDIA</a>
+</nav>
+​
+<!-- About the team -->
+<div class="w3-content" style="max-width:1100px">
+​
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="./Images/will.JPG" class="w3-round w3-image" alt="Will" width="600" height="750">
+    </div>
+​
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Will Reiter</h1>
+        <h5 class="w3-center">wreiter@rams.colostate.edu</h5>
+      <p class="w3-large">Will Reiter is from Plano, Texas. He graduated High School in 2018 with a desire to enter a technical field. His passion for learning, problem solving, and technology landed him in the College of Engineering at Colorado State University. He will graduate in the Spring of 2022, with a major in Computer Engineering and a minor in Computer Science. After school, he hopes to enter the field of software development.  </p>
+    </div>
+    </div>
+       <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="./Images/drew.JPG" class="w3-round w3-image" alt="Will" width="600" height="750">
+    </div>
+       <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">Drew Shively</h1>
+            <h5 class="w3-center">dshive@rams.colostate.edu</h5>
+           <p class="w3-large"> Drew Shively grew up in Aurora, Colorado. He always knew that he wanted to be an engineer when he grew up and began pursuing electrical engineering at CSU. Drew is always striving to learn something new and continues to work through problems to complete each challenge. He has a passion for computer science, working with hardware, and working with signals and systems. After graduation, Drew plans to pursue a career in the aerospace or renewable energy industry. Outside of school, he enjoys listening to music, hanging out with friends, and loves playing sports, especially rugby.</p>
+    </div>
+  </div> 
+  
+  <!-- Get to know the advisor -->
+  <div class="w3-row w3-padding-64 w3-light-grey" id="advisor">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Advising Faculty</h1>
+        <h4>Dr. Hoanan Chen</h4>
+        <p class="w3-text-grey">haonan.chen@colostate.edu | <a href="#s" style=padding:0>Biography</a></p>  
+        <h4>Shun Yao - Graduate Student</h4>
+        <p class="w3-text-grey">s.yao@colostate.edu | <a href="#s" style=padding:0>Biography</a></p>  
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="./Images/timeline.jpeg" class="w3-round w3-image" alt="Advisors" style="width:100%">
+    </div>
+  </div>
+​
+  <hr>
+​
+  
+<!-- End page content -->
+</div>
+​
+<!--Footer-->
+<footer class="w3-container w3-padding-32 w3-dark-grey">
+  <div class="w3-row-padding">
+    <div class="w3-third">
+      <h3 class="w3-center"><u>About our project</u></h3>
+      <p align="justify"> Motion Prediction using Artificial Intelligence has come quite a long way. Fifteen years ago, image recognition was one of the challenging AI/Machine Learning problems. In 2021, we have the computational power & technological requirements necessary to analize complex data sets. At its core, this project is the mission to fully utilize the state-of-the-art tools we have at our hands.</p>
+    </div>
+    <div class="w3-third w3-center">
+      <h3><u>Useful Links</u></h3>
+        <h6 ><a href="https://advancing.colostate.edu/ENG/ECE_SRDESIGN/GIVE" style=padding:0; class="w3-button">Support our Program</a></h6>
+        <h6><a href="http://www.engr.colostate.edu/ECE401/AY21_senior_design_projects.php" style=padding:0; class=" w3-button">Senior Design Projects</a></h6> 
+        <h6><a href="http://www.engr.colostate.edu/ece/index.php" style=padding:0; class="w3-button">ECE Department</a></h6> 
+        <h6><a href="http://www.colostate.edu/" style=padding:0; class="w3-button">CSU Website</a></h6> 
+    </div>
+    <div class="w3-third w3-center">
+      <h3><u>Social</u></h3>
+        <h6> 
+          <a href="https://www.facebook.com/csuengineering/"  style=padding:0;margin-right:10px;  class="fa fa-facebook-official w3-hover-opacity w3-button"></a>
+          <a href="https://twitter.com/CSUEngineering?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" style=padding:0;margin-right:10px; class="fa fa-twitter w3-hover-opacity w3-button"></a>
+          <a href="https://www.instagram.com/csuengineering/?hl=en" style=padding:0; style=border:1; class="fa fa-instagram w3-hover-opacity w3-button"></a>
+        </h6>
+    </div>
+  </div>
+</footer>
+​
+</body>
+</html>
