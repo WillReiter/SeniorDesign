@@ -40,23 +40,23 @@ body, html {
       <a href="./media.html" class="w3-bar-item w3-button">MEDIA</a>
 ​
     </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <!-- Hide right-floated links on small screens and replace them with a menu icon- -->
 ​
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
+    <a href="javascript:void(0)" onclick="w3_open()" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" >
+      <i class="fa fa-bars"></i> 
     </a>
   </div>
 </div>
 ​
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:grid" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+<!-- Sidebar on small screens when clicking the menu icon
+<div class="w3-sidebar w3-bar-block w3-card w3-hide-large w3-collapse" style="display:grid" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</button>
   <a href="./index.html" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
   <a href="./timeline.html" onclick="w3_close()" class="w3-bar-item w3-button">TIMELINE</a>
   <a href="./team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
   <a href="./documents.html" onclick="w3_close()" class="w3-bar-item w3-button">DOCUMENTS</a>
-  <a href="./media.html" onclick="w3_close()" class="w3-bar-item w3-button">MEDIA</a>
-</nav>
+  <a href="./media.html" onclick="w3_close()" class="w3-bar-item w3-button">MEDIA</a> -->
+</div>
   
   <!-- Photo grid -->
   <div class="w3-row">
@@ -156,6 +156,7 @@ function w3_close() {
 }
 ​
 // Modal Image Gallery
+
 function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
